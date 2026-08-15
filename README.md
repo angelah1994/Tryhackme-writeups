@@ -8,10 +8,16 @@ This repository tracks my progress through TryHackMe as part of my ongoing cyber
 
 ## Rooms Completed
 
-| Room | Category | Difficulty | Key Techniques | Writeup |
-|------|----------|-----------|-----------------|---------|
-| Fool's Mate | Web Application / API Security | Level 1 | API traffic analysis, business logic bypass | [Link](./FoolsMate/foolsmate-writeup.md) |
+|Room|Category|Difficulty|Key Techniques|Writeup|
+|-|-|-|-|-|
+|Fool's Mate|Web Application / API Security|Level 1|API traffic analysis, business logic bypass|[Link](./FoolsMate/foolsmate-writeup.md)|
+|  Basic Pentesting|  Network / Linux  |Easy|SSH/SMB enumeration, credential attacks, privilege escalation| \[Link](BasicPentesting/README.md)|
+
+## 
 
 ## Disclaimer
 
+
+
 All writeups are for educational purposes and reference rooms I have legitimate authorized access to through my TryHackMe account. No content here targets real-world systems without authorization.
+
