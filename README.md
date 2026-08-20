@@ -11,7 +11,8 @@ This repository tracks my progress through TryHackMe as part of my ongoing cyber
 |Room|Category|Difficulty|Key Techniques|Writeup|
 |-|-|-|-|-|
 |Fool's Mate|Web Application / API Security|Level 1|API traffic analysis, business logic bypass|[Link](./FoolsMate/foolsmate-writeup.md)|
-|  Basic Pentesting|  Network / Linux  |Easy|SSH/SMB enumeration, credential attacks, privilege escalation| [Link](./BasicPentesting/README.md)|
+|Basic Pentesting|Network / Linux|Easy|SSH/SMB enumeration, credential attacks, privilege escalation|[Link](./BasicPentesting/README.md)|
+|Blue|Windows / Network Exploitation|Easy|Nmap \& NetExec enumeration, (service scanning, null SMB session, RID-brute), MS17-010 (EternalBlue) exploitation<br />Meterpreter post-exploitation<br />Hash dumping \& cracking||
 
 ## 
 
