@@ -120,7 +120,7 @@ Recovered NTLM hashes for `Administrator`, `Guest`, and a third local account, `
 
 ![Hashdump](images/12-hashdump.png)
 
-Tested `Jon`'s hash against a public NTLM lookup — it resolved instantly to the plaintext password `alqfna22`, confirming a weak, dictionary-crackable password on that account.
+Tested `Jon`'s hash against a public NTLM lookup — it resolved instantly to the plaintext password (redacted), confirming a weak, dictionary-crackable password on that account.
 
 ![NTLM crack](images/13-ntlm-crack.png)
 
@@ -130,13 +130,13 @@ Dropped to a native shell and recovered all three flags, demonstrating SYSTEM-le
 
 ```
 C:\Windows\system32> type C:\flag1.txt
-flag{access_the_machine}
+flag{[REDACTED]}
 ```
 ![Flag 1](images/14-flag1.png)
 
 ```
 C:\Windows\system32> type C:\Windows\System32\config\flag2.txt
-flag{sam_database_elevated_access}
+flag{[REDACTED]}
 ```
 Located in the same directory as the SAM/SECURITY hive files.
 
@@ -144,7 +144,7 @@ Located in the same directory as the SAM/SECURITY hive files.
 
 ```
 C:\Windows\system32> type C:\Users\Jon\Documents\flag3.txt
-flag{admin_documents_can_be_valuable}
+flag{[REDACTED]}
 ```
 Recovered from another local user's private Documents folder.
 
@@ -155,4 +155,4 @@ Recovered from another local user's private Documents folder.
 - An old SMBv1-capable build with signing not enforced is worth checking against MS17-010 immediately — it's a higher-value lead than trying to push past access-denied errors on share/RID enumeration.
 - SYSTEM access from a kernel-level exploit bypasses per-user file permissions entirely, including other users' Documents folders and the SAM/SECURITY hive directory.
 - A hash that cracks instantly against a public lookup is a fast, practical way to prove a password policy is weak without needing a full offline brute-force campaign.
-- Patching alone doesn't fix everything found here — SMBv1 should be disabled outright, signing enforced, and the password policy that allowed `alqfna22` reviewed fleet-wide.
+- Patching alone doesn't fix everything found here — SMBv1 should be disabled outright, signing enforced, and the password policy that allowed the recovered password reviewed fleet-wide.
